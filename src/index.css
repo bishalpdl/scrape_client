@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  tr {
+    @apply px-5 text-[14px]  font-medium tracking-[0.02em] text-neutral-700;
+  }
+
+  td {
+    @apply px-5 py-4;
+  }
+
+  th {
+    @apply text-neutral-600 px-5 py-4 font-semibold;
+  }
+
+  thead {
+    @apply border-y border-neutral-200;
+  }
+}
+
+@layer components {
+  .app-layout {
+    @apply max-w-[1280px] px-4 mx-auto;
+  }
+  .input {
+    @apply block w-full px-2 py-3 rounded-md border text-sm font-normal  outline-none border-slate-200;
+  }
+
+  .label {
+    @apply block mb-1 text-sm font-semibold text-white;
+  }
+}
